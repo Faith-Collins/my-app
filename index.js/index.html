@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Collins - DevOps Portfolio</title>
+    <style>
+        :root {
+            --primary: #FFD700; /* yellow */
+            --secondary: #8B4513; /* brown */
+            --text-dark: #333333;
+            --text-light: #f8f8f8;
+            --bg-dark: #121212;
+            --card-dark: #1e1e1e;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, var(--bg-dark), #2a2a2a);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--card-dark);
+            color: var(--primary);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+            color: var(--text-light);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: var(--card-dark);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--secondary);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background-color: rgba(139, 69, 19, 0.1);
+            margin: 12px 0;
+            padding: 15px;
+            border-left: 5px solid var(--primary);
+            border-radius: 5px;
+            transition: transform 0.2s;
+            color: var(--text-light);
+        }
+
+        ul li:hover {
+            transform: translateX(5px);
+            background-color: rgba(139, 69, 19, 0.2);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #FFEE58;
+        }
+
+        .project strong {
+            color: var(--primary);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9em;
+            color: var(--primary);
+            background-color: var(--card-dark);
+            border-top: 1px solid var(--secondary);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Faith Collins</h1>
+        <p>DevOps Engineer | Cloud Architect</p>
+    </div>
+
+    <div class="container">
+        <h2>About Me</h2>
+        <p>1+ years experience building scalable cloud infrastructure. Passionate about automation and optimizing CI/CD pipelines. Open source contributor.</p>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Cloud Platforms:</strong> AWS, Azure</li>
+            <li><strong>Containerization:</strong> Docker, Kubernetes, ECS</li>
+            <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation</li>
+            <li><strong>CI/CD Tools:</strong> Jenkins, GitHub Actions</li>
+            <li><strong>Monitoring/Logging:</strong> Prometheus, Grafana, ELK</li>
+            <li><strong>Scripting:</strong> Python, Bash</li>
+        </ul>
+
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified DevOps Engineer - Professional</li>
+            <li>Certified Kubernetes Administrator (CKA)</li>
+            <li>BSc, Business Administration and Management</li>
+        </ul>
+
+        <h2>Professional Projects</h2>
+        <ul>
+            <li class="project">
+                <strong>AWS Migration Project:</strong> Migrated company infrastructure from on-prem to AWS. <em>Achievement:</em> Reduced costs by 35% while improving uptime.
+            </li>
+            <li class="project">
+                <strong>Kubernetes Cluster Implementation:</strong> Designed production-grade K8s cluster. <em>Achievement:</em> Improved deployment frequency by 400%.
+            </li>
+        </ul>
+
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:inboxbang@gmail.com">inboxbang@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faith-collins-a0aba9357" target="_blank">linkedin.com/in/faith-collins</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Faith-Collins/my-app.git" target="_blank">github.com/Faith-Collins</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        © <span id="year"></span> Faith Collins. All rights reserved.
+    </div>
+
+    <script>
+        // Automatically update year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
